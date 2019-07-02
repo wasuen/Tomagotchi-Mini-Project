@@ -1,6 +1,7 @@
 $('.start').on('click', (e) => {
     console.log('this button is working');
     game.createGame();
+    $(e.currentTarget).hide();
 })
 
 const game = {
