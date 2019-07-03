@@ -4,4 +4,6 @@ class Tomagotchi {
         this.hunger = 10;
         this.sleepiness = 10;
         this.boredom = 10;
+    }
+    
 }
