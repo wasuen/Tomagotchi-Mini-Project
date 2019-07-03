@@ -18,32 +18,36 @@
 <body>
     <h1>Train Your Monster</h1>
     <div class='name'>
-        <h2>name</h2>
+        <h3>name</h3>
     </div>
     <div class='modal' id='linkedToModal'>
         <div class='titleName'>Name Your Monster:</div><br>
-        <div><input type='text' name='tname' class='tname'></div><br>
-        <div><a href="#" rel="modal:close" class="submit">Submit</a></div>
+        <div><input type='text' name='tname' class='tname' style ='text-align: center'></div><br>
+        <div><a href="#" rel="modal:close" class="submit" style='text-align: center'>Submit</a></div>
     </div>
     <br>
-    <div class='interactions'>
-       <button id='feed'>Feed</button>
-       <button id='play'>Play</button>
-       <button id='sleep'>sleep</button>
-    </div>
-    <div class='scores'>
-        <div>Hunger Level</div>
-        <div class='hunger'>10</div>
-        <div>Sleepiness Level</div>
-        <div class='sleepy'>10</div>
-        <div>Boredom Level</div>
-        <div class='bored'>10</div>
+    <div class='interactions' style="text-align:center;">
+       <button id='mineral'>Feed Minerals</button>
+       <button id='gas'>Feed Gas</button>
+       <button id='energy'>Recharge Shield</button>
     </div>
     <div>
-        <img src="images/Drone.gif"/>
+        <div class='ageScore'>Age
+            <div class='age'>0</div>
+        </div>
     </div>
-
-
+       <p><img src="images/Drone.gif" id='monster'></p>
+    <footer class='scores'>
+        <div class="mineralScore">Mineral Consumption
+            <div class='mineral'>10</div>
+        </div>
+        <div class="gasScore">Gas Consumption
+            <div class='gas'>10</div>
+        </div>
+        <div class="energyScore">Energy Consumption
+            <div class='energy'>10</div>
+        </div>
+    </footer>
 </body>
 <script src="js/tomagotchi.js"></script>
 <script src="js/app.js"></script>
