@@ -88,10 +88,18 @@ const game = {
           };
           if(this.age === 5){
             $('img').attr('src','images/Zergling.gif');
+          } else if(this.age === 5){
+            $('img').attr('src','images/Roach.gif');
           } else if(this.age === 10){
             $('img').attr('src','images/Hydralisk.gif');
           } else if(this.age === 15){
+            $('img').attr('src','images/Infestor.gif');
+          } else if(this.age === 20){
             $('img').attr('src','images/Ultralisk.gif');
+          } else if(this.age === 25){
+            $('img').attr('src','images/Mutalisk.gif');
+          } else if(this.age === 30){
+            $('img').attr('src','images/Brood_Lord.gif');
           };
         $('.age').text(`${this.age}`);
       }, 1000);
