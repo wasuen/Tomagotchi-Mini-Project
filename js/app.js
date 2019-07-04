@@ -1,7 +1,7 @@
 
 $(".modal").modal({
-    fadeDuration: 100,
-    fadeDelay: 0.50
+    fadeDuration: 200,
+    fadeDelay: 1,
   });
 
 $('.submit').on('click', (e) => {
@@ -24,7 +24,6 @@ const game = {
     age: 0,
     initTomagotchi() {
         const tomagotchi = new Tomagotchi($('.tname').val());
-        console.log(tomagotchi);
         $('h3').text($('.tname').val())
     },
     setMineral(){
@@ -37,7 +36,6 @@ const game = {
             if(this.energy === 0 || this.gas === 0){
               clearInterval(timer);
             };
-            console.log(this.mineral)
             if(this.mineral === 0){
               $('img').attr('src','images/wasted.png');
               clearInterval(timer);
