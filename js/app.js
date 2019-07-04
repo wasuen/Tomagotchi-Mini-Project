@@ -2,6 +2,9 @@
 $(".modal").modal({
     fadeDuration: 200,
     fadeDelay: 1,
+    escapeClose: false,
+    clickClose: false,
+    showClose: false
   });
 
 $('.submit').on('click', (e) => {
