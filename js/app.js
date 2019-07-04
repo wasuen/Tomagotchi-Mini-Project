@@ -88,9 +88,9 @@ const game = {
           };
           if(this.age === 5){
             $('img').attr('src','images/Zergling.gif');
-          } else if(this.age === 15){
+          } else if(this.age === 10){
             $('img').attr('src','images/Hydralisk.gif');
-          } else if(this.age === 20){
+          } else if(this.age === 15){
             $('img').attr('src','images/Ultralisk.gif');
           };
         $('.age').text(`${this.age}`);
